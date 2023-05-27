@@ -100,6 +100,17 @@ body {
   margin-top: 1.8rem;
 }
 
+.heading-primary {
+  font-size: 6.2rem;
+  line-height: 2;
+  margin-bottom: 3.2rem;
+  text-transform: capitalize;
+  color: #f0ecfb;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
 .heading-secondary,
 .subheading {
   text-align: center;
@@ -137,6 +148,34 @@ body {
   align-items: center;
 }
 
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding: 1.6rem 2.4rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #482e98;
+  color: #f0ecfb;
+  position: absolute;
+  right: 2.4rem;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #ad98eb;
+  color: #482e98;
+}
 /* HEADER */
 
 .header {
@@ -184,6 +223,71 @@ body {
   margin-right: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.icon--full {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+/* SECTION-HERO */
+
+.section-hero {
+  background-color: #f0ecfb;
+  padding: 4.8rem 0 9.6rem 0;
+  background-image: url(../img/joshua-rodriguez-Hf-llF2G1IM-unsplash.jpg);
+  background-size: cover;
+}
+
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-items: center;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  color: #f0ecfb;
+}
+
+/* SECTION FEATURED IN */
+
+.section-featured {
+  padding: 6.4rem 0 1.6rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos img {
+  height: 4.8rem;
+  filter: brightness(0);
+  opacity: 50%;
+  margin-top: 1rem;
 }
 
 /* Z-PATTERN */
