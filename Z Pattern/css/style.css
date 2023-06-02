@@ -30,6 +30,8 @@ Large: 1.8
 #ad98eb
 #7654dd
 #8567e1
+#b6a4ed
+#e7e1f9
 
 - Shades: 
 #482e98
@@ -176,6 +178,28 @@ body {
   background-color: #ad98eb;
   color: #482e98;
 }
+
+.btn--form,
+.btn--form:link,
+.btn--form:visited {
+  background-color: #482e98;
+  color: #f0ecfb;
+}
+
+.btn--form:hover,
+.btn--form:active {
+  background-color: #f0ecfb;
+  color: #482e98;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(198, 169, 216, 0.29);
+}
+
+strong {
+  font-weight: 500;
+}
 /* HEADER */
 
 .header {
@@ -188,7 +212,7 @@ body {
 }
 
 .logo {
-  height: 6.2rem;
+  height: 8rem;
 }
 
 /* NAV-BAR */
@@ -198,6 +222,30 @@ body {
   display: flex;
   align-items: center;
   gap: 4.8rem;
+}
+
+.nav-btn-link,
+.nav-btn-link:link,
+.nav-btn-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.6rem 1.8rem;
+  background-color: #3a1d91;
+  color: #f0ecfb;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.nav-btn-link:hover,
+.nav-btn-link:active {
+  background-color: #f0ecfb;
+  color: #18112c;
 }
 
 .main-nav-link:link,
@@ -236,7 +284,7 @@ body {
 .section-hero {
   background-color: #f0ecfb;
   padding: 4.8rem 0 9.6rem 0;
-  background-image: url(../img/joshua-rodriguez-Hf-llF2G1IM-unsplash.jpg);
+  background-image: url(../img/hero-img.jpg);
   background-size: cover;
 }
 
@@ -260,6 +308,22 @@ body {
   line-height: 1.6;
   margin-bottom: 4.8rem;
   color: #f0ecfb;
+}
+
+.dunkers {
+  color: #ffeaa7;
+  display: inline-block;
+}
+
+.dunkers-link,
+.dunkers-link:link,
+.dunkers-link:visited {
+  text-decoration: none;
+}
+
+.dunkers-link:hover,
+.dunkers-link:active {
+  font-size: 2rem;
 }
 
 /* SECTION FEATURED IN */
@@ -318,4 +382,147 @@ body {
   height: 35%;
   border-radius: 10%;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+/*CTA SECTION*/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to left top, #b6a4ed, #e7e1f9);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #000000;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  position: relative;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #f0ecfb;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.7rem rgba(253, 242, 233, 0.5);
+}
+
+/*Footer*/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #888;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+}
+
+.logo-fot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #c9bbf2;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #495057;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #3a4046;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
